@@ -50,6 +50,12 @@ Run the redaction helper on a text artifact:
 python scripts/redact_evidence.py input.txt output.txt
 ```
 
+For the full first-use flow, read:
+
+```text
+docs/quickstart.md
+```
+
 ## Integration phases
 
 1. **Pattern-only**: keep contracts and documentation only.
@@ -64,4 +70,3 @@ python scripts/redact_evidence.py input.txt output.txt
 - This is not a GenericAgent fork.
 - This is not a one-click installer.
 - This is not a place for real cookies, OAuth tokens, browser profiles, or personal logs.
-
