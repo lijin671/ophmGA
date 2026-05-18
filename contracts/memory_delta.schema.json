@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/openhuman-ga/memory_delta.schema.json",
+  "title": "Proposed Memory Delta",
+  "type": "object",
+  "required": ["schema_version", "packet_type", "task_id", "proposed_updates", "review_required"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "packet_type": {"type": "string", "enum": ["memory_delta"]},
+    "task_id": {"type": "string"},
+    "proposed_updates": {"type": "array"},
+    "review_required": {"type": "boolean"}
+  },
+  "additionalProperties": true
+}
+

@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1.0",
+  "packet_type": "task",
+  "task_id": "example-browser-001",
+  "created_by": "example",
+  "created_at": "2026-05-18T00:00:00Z",
+  "task_type": "browser_operation",
+  "goal": "Use a disposable browser profile to inspect a fake local test page and capture a field summary.",
+  "context": {
+    "summary": "Use only fake local pages or operator-provided test pages.",
+    "source_refs": ["examples/browser-operation-task/context.md"]
+  },
+  "permissions": {
+    "browser": {
+      "allowed": true,
+      "profile": "disposable-test-profile",
+      "cookie_access": false,
+      "js_execution": true,
+      "screenshot": true,
+      "file_upload": false,
+      "file_download": false
+    },
+    "filesystem": {"allowed_paths": ["handoff/ga-to-openhuman"]},
+    "network": {"allowed_domains": ["localhost", "127.0.0.1"]},
+    "adb": {"allowed": false},
+    "physical_input": {"allowed": true, "require_visible_window": true},
+    "memory_writeback": {"allowed": false, "delta_only": true}
+  },
+  "output_requirements": {
+    "write_result_to": "handoff/ga-to-openhuman/example-browser-001-result.json",
+    "write_evidence_to": "handoff/ga-to-openhuman/evidence/example-browser-001/",
+    "memory_delta_required": true
+  }
+}
+

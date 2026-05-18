@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/openhuman-ga/evidence_packet.schema.json",
+  "title": "Evidence Packet",
+  "type": "object",
+  "required": ["schema_version", "packet_type", "task_id", "artifacts", "redaction_status"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "packet_type": {"type": "string", "enum": ["evidence"]},
+    "task_id": {"type": "string"},
+    "artifacts": {"type": "array"},
+    "redaction_status": {"type": "string", "enum": ["not_needed", "pending", "redacted", "blocked"]}
+  },
+  "additionalProperties": true
+}
+

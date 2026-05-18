@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1.0",
+  "packet_type": "result",
+  "task_id": "example-memory-001",
+  "status": "completed",
+  "summary": "The task produced a proposed memory delta using fake data.",
+  "artifacts": ["examples/memory-update-task/memory_delta.json"],
+  "risks": ["Example only. No private data."],
+  "memory_delta_required": true
+}
+

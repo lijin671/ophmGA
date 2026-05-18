@@ -1,0 +1,17 @@
+{
+  "schema_version": "0.1.0",
+  "packet_type": "memory_delta",
+  "task_id": "example-memory-001",
+  "proposed_updates": [
+    {
+      "type": "project_note",
+      "content": "Fake project prefers file handoff before live MCP bridge.",
+      "confidence": 0.9,
+      "sensitivity": "low",
+      "evidence_ref": "examples/memory-update-task/result_packet.json",
+      "review_status": "pending"
+    }
+  ],
+  "review_required": true
+}
+

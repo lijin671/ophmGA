@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/openhuman-ga/result_packet.schema.json",
+  "title": "GenericAgent Result Packet",
+  "type": "object",
+  "required": ["schema_version", "packet_type", "task_id", "status", "summary", "artifacts", "memory_delta_required"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "packet_type": {"type": "string", "enum": ["result"]},
+    "task_id": {"type": "string"},
+    "status": {"type": "string", "enum": ["completed", "partial", "blocked", "failed"]},
+    "summary": {"type": "string"},
+    "artifacts": {"type": "array"},
+    "risks": {"type": "array"},
+    "memory_delta_required": {"type": "boolean"}
+  },
+  "additionalProperties": true
+}
+

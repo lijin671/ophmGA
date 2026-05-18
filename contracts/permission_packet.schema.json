@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/openhuman-ga/permission_packet.schema.json",
+  "title": "Runtime Permission Packet",
+  "type": "object",
+  "required": ["schema_version", "packet_type", "task_id", "browser", "filesystem", "network", "adb", "physical_input", "memory_writeback"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "packet_type": {"type": "string", "enum": ["permission"]},
+    "task_id": {"type": "string"},
+    "browser": {"type": "object"},
+    "filesystem": {"type": "object"},
+    "network": {"type": "object"},
+    "adb": {"type": "object"},
+    "physical_input": {"type": "object"},
+    "memory_writeback": {"type": "object"}
+  },
+  "additionalProperties": true
+}
+

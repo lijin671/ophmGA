@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/openhuman-ga/task_packet.schema.json",
+  "title": "OpenHuman to GenericAgent Task Packet",
+  "type": "object",
+  "required": ["schema_version", "packet_type", "task_id", "created_by", "created_at", "task_type", "goal", "context", "permissions", "output_requirements"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "packet_type": {"type": "string", "enum": ["task"]},
+    "task_id": {"type": "string"},
+    "created_by": {"type": "string"},
+    "created_at": {"type": "string"},
+    "task_type": {"type": "string"},
+    "goal": {"type": "string"},
+    "context": {"type": "object"},
+    "permissions": {"type": "object"},
+    "output_requirements": {"type": "object"}
+  },
+  "additionalProperties": true
+}
+

@@ -1,0 +1,38 @@
+# Runtime handoff outputs
+handoff/**/*.json
+handoff/**/*.md
+handoff/**/*.log
+handoff/**/*.png
+handoff/**/*.jpg
+handoff/**/*.jpeg
+handoff/**/*.webp
+handoff/**/*.zip
+handoff/**/*.har
+!handoff/**/.gitkeep
+
+# Secrets and local runtime state
+.env
+.env.*
+*.secret
+*.pem
+*.key
+*.p12
+*.pfx
+*.sqlite
+*.sqlite3
+*.db
+browser-profiles/
+oauth-cache/
+runtime-state/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+

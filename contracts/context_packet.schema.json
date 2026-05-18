@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/openhuman-ga/context_packet.schema.json",
+  "title": "Bounded Context Packet",
+  "type": "object",
+  "required": ["schema_version", "packet_type", "task_id", "summary", "sources"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "packet_type": {"type": "string", "enum": ["context"]},
+    "task_id": {"type": "string"},
+    "summary": {"type": "string"},
+    "sources": {"type": "array"},
+    "redactions": {"type": "array"}
+  },
+  "additionalProperties": true
+}
+
